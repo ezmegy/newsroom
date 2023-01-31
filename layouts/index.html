@@ -31,9 +31,17 @@
   {{- if and (eq $index (add $size -1)) (gt $size 1) }}</div>{{ end }}
   {{- end }}
 </div>
-<a href = '{{ absURL (printf "post/%s" "") }}' class = 'post_nav'><span class = 'post_next'>{{ T "archive_text" }}
+<!-- <a href = '{{ absURL (printf "post/%s" "") }}' class = 'post_nav'><span class = 'post_next'>{{ T "archive_text" }}
   <svg class="icon icon_scale">
     <use xlink:href="#double-arrow"></use>
   </svg>
-</span></a>
+</span></a> -->
+<div>
+  <ul style="list-style-type: none; margin: 0; padding: 0; text-align: center;">
+    <li style="display: inline-block; width: 20%;"><img src="/images/sponsors/irish aid.jpg" alt="Irish Aid"/></li>
+    <li style="display: inline-block; width: 20%;"><img src="/images/sponsors/ucd.jpg" alt="UCD"/></li>
+    <li style="display: inline-block; width: 20%;"><img src="/images/sponsors/mbarara.jpeg" alt="Mbarara University"/></li>
+    <li style="display: inline-block; width: 20%;"><img src="/images/sponsors/sfi.jpg" alt="SFI"/></li>
+  </ul>
+</div>
 {{ end }}
