@@ -11,7 +11,7 @@
           {{ if in . "https://" }}
             {{- $image = . }}
           {{ end }}
-          <img src="{{ $image }}" alt="{{ . }}" class="post_thumbnail">
+          <!-- <img src="{{ $image }}" alt="{{ . }}" class="post_thumbnail"> -->
         {{ end }}
           {{ .Content }}
         </div>
